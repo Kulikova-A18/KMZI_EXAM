@@ -1,0 +1,8 @@
+def power_mod(n, x):
+    return (2 ** n) % x
+
+x = 61
+results = {n: power_mod(n, x) for n in range(101)}
+
+for n, result in results.items():
+    print(f"2^{n} mod {x} = {result}")
